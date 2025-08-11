@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+    
+}
+
+.totop {
+    animation-name: appear;
+    animation-timeline: scroll(y);
+      z-index: 999;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.banner{
+    
+    
+    background-color: #000000;
+    width:  100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bob.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+}
+.banner-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    width: 85%; ;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+
+}
+.navbar h1{
+    color: #0055ff;
+    padding: 15px 15;
+    margin: 20px 10px;
+    border: 3px solid #0055ff;
+    font-size: 40px;
+    font-weight: bold;
+}
+.logo {
+    width: 120px;
+    cursor: pointer; 
+
+}
+.navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0% 20px;
+    position: relative;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+
+}
+.navbar ul li a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #0055ff ;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+
+
+}
+.navbar ul li a:hover::after {
+    width: 100%;
+   
+}
+.content{
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+.content h1{
+    font-size: 80px;
+    margin-top: 80px;
+}
+.content p{
+    margin  : 20px auto;
+    font-size: 30px;
+}
+button{
+    width:  200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #0055ff;
+    cursor: pointer;
+    position: relative;
+    background-color: #0055ff;
+    display: block; 
+    
+}
+
+.booking {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.booking-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(176, 230, 234, 0.293);
+}
+
+.booking {
+    margin: 0px auto;
+    padding: 10px;
+    height: 100vh;
+    background-color: #cff3ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    position: relative;
+}
+
+.booking h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.booking p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.one {
+    margin: 20px,0;
+    padding: 50px;
+    background-color: rgb(0, 238, 255); 
+    border-radius: 50px;
+    border: rgb(0, 0, 0) solid 2px;
+}
+
+.booking .nim{
+    margin: 20px,0;
+    padding: 10px;
+    background-color: transparent; 
+    border-radius: 50px;
+}
+
+.nim input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #000000;
+    padding: 20px 20px 20px 20px;
+}
+
+
+.booking .con{
+    margin: 20px,0;
+    padding: 10px;
+    background-color:transparent; 
+    border-radius: 50px;
+   
+}
+
+.con input{
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #000000;
+    padding: 20px 20px 20px 20px;
+}
+
+.booking .iss{
+    margin: 20px,0;
+    padding: 10px;
+    background-color:transparent; 
+    border-radius: 50px;
+   
+}
+
+.iss textarea{
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #000000;
+    padding: 20px 20px 20px 20px;
+}
+
+.booking .det{
+    margin: 20px,0;
+    padding: 10px;
+    background-color:transparent; 
+    border-radius: 50px;
+   
+}
+
+.det input{
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #000000;
+    padding: 20px 20px 20px 20px;
+}
+
+.repairmen{
+    background-color: f0f0f0;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.repairmen h1{
+    font-size: 50px;
+    color: #000000;
+    display: block;
+    text-align: center;
+    top: 50px;
+    padding : 20px;
+    width: 100%;
+    margin: 20px;
+}
+
+.two {
+    padding: 20px;
+    background-color: rgb(255, 255, 255); 
+    border-radius: 10px;
+    border: rgb(0, 0, 0) solid 3px;
+    margin: 50px;
+    width: 30%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.two-grid{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));
+    max-width: 500px;
+    margin: 20px, auto;
+}
+
+.two h1 {
+    font-size: 50px;
+    color: #000000;
+    margin: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.two h2 {
+    font-size: 30px;
+    color: #000000;
+    margin: 10px;
+    text-align: center;
+}
+
+.two p {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #000000;
+    text-align: center;
+
+}
+
+.two img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    margin: 10px auto;
+    border : 2px solid #000000;
+    display: block;
+    object-fit: cover;
+
+}
+
+.review{
+    background-color: #cff3ff;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.review h1{
+    font-size: 50px;
+    color: #000000;
+    display: block;
+    text-align: center;
+    top: 50px;
+    padding : 20px;
+    width: 100%;
+}
+
+.three {
+    padding: 20px;
+    background-color: rgb(255, 255, 255); 
+    border-radius: 10px;
+    border: rgb(0, 0, 0) solid 3px;
+    margin: 10px;
+    width: 30%;
+    align-items: center;
+    text-align: center;
+}
+
+.three-grid{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));
+    max-width: 250px;
+    margin: 10px, auto;
+}  
+
+.review p{
+    font-size: 20px;
+    color: #000000;
+    width: 250px;
+    top: 50px;
+    display: block;
+}
+
+.contus{
+    background-color: #7a7a7a;
+    color: #ffffff;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+}
+
